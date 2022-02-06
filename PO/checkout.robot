@@ -12,7 +12,13 @@ ${btn-finish}       id:finish
 ***Keywords***  
 Então darei continuidade a compra
     Input Text          ${inp-Fname}             Rodrigo
+    Page Should Contain Textfield                Rodrigo
+
     Input Text          ${inp-Lname}             Pereira
+    Page Should Contain Textfield                Pereira
+
     Input Text          ${inp-Pcode}             412304
+    Page Should Contain Textfield                412304
+    
     Click Button        ${btn-continue}
     Click Button        ${btn-finish}

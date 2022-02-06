@@ -5,12 +5,17 @@ Library     SeleniumLibrary
 ***Variables***
 ${lblusername}     css:input[name=user-name]    
 ${lblpassword}     css:input[name=password]  
-${btnlogin}        css:input[value='Login']  
+${btnlogin}        id:login-button
 
 ***Keywords***
 Dado Que eu faça login com usuário standard
     
     Input Text      ${lblusername}        standard_user
-    Input Password  ${lblpassword}        secret_sauce
-    Click Element   ${btnlogin}
+    Page Should Contain                   standard_user
 
+    Input Password  ${lblpassword}        secret_sauce
+    Page Should Contain                   secret_sauce
+
+    Click Button    ${btnlogin}
+    
+   
