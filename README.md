@@ -19,8 +19,8 @@
 
 Extensões utilizadas no VsCode:
 
- Robot Framework Intellisense
- Python
+1. Robot Framework Intellisense
+2. Python
 
 #####################################################################################
 
