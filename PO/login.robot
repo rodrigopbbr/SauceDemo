@@ -10,12 +10,8 @@ ${btnlogin}        id:login-button
 ***Keywords***
 Dado Que eu faça login com usuário standard
     
-    Input Text      ${lblusername}        standard_user
-    Page Should Contain                   standard_user
-
-    Input Password  ${lblpassword}        secret_sauce
-    Page Should Contain                   secret_sauce
-
+    Input Text      ${lblusername}        standard_user             
+    Input Password  ${lblpassword}        secret_sauce          
     Click Button    ${btnlogin}
     
    
